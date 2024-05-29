@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Strings
 console.log('Hello');
 
@@ -27,3 +28,6 @@ console.log(result, fullName); //some methods don't alter the original value
 //indexOf
 let index = email.indexOf('@');
 console.log(index);
+=======
+console.log(1);
+>>>>>>> 79e4dd7d3b5f39db39b35fbaec0dc8b073cd0f1d
