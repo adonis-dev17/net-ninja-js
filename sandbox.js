@@ -37,7 +37,10 @@ let result1 = email1.lastIndexOf('.');
 console.log(result1);//output: 18
 
 //2. .slice()
-let result2 = email1.slice(0, 6)//slice from position 0, to position 5
-console.log(result2);//output: adonis
+let result2 = email1.slice(5, 7)//slice starts from index 5, 7 characters from index 0.
+console.log(result2);//output: s.
 
+//3. .substr()
+let result3 = email1.substr(1, 6);//starts from index 1, 6 characters starting from index 1.
+console.log(result3);//output: donis.
 
