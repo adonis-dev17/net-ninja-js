@@ -36,4 +36,8 @@ let email1 = 'adonis.dev17@gmail.com';
 let result1 = email1.lastIndexOf('.');
 console.log(result1);//output: 18
 
+//2. .slice()
+let result2 = email1.slice(0, 6)//slice from position 0, to position 5
+console.log(result2);//output: adonis
+
 
