@@ -44,3 +44,8 @@ console.log(result2);//output: s.
 let result3 = email1.substr(1, 6);//starts from index 1, 6 characters starting from index 1.
 console.log(result3);//output: donis.
 
+//4. .replace()
+let result4 = email1.replace('i', 'y');//will replace the first i to y.
+console.log(result4);//output: adonys.dev17@gmail.com
+
+
