@@ -41,3 +41,14 @@ console.log(iLikes);//Output: 30
 
 iLikes /= 10;
 console.log(iLikes);//Output: 3
+
+//4. NaN = Not a Number => means you are doing something wrong
+console.log(5 * 'Hello');
+console.log(5 / 'Halleluia');
+
+//4. Concatenate numbers to string
+console.log('The blog has ' + iLikes + ' likes.');//Output: The blog has 3 likes.
+
+
+
+
