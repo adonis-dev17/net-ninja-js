@@ -48,4 +48,29 @@ console.log(result3);//output: donis.
 let result4 = email1.replace('i', 'y');//will replace the first i to y.
 console.log(result4);//output: adonys.dev17@gmail.com
 
+//5. Template Strings
+const title = 'Best Reads of 2019';
+const author = 'Adonis';
+const likes = 30;
 
+//Concatenation way
+let result5 = 'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes.';
+console.log(result5);//Output: The blog called Best Reads of 2019 by Adonis has 30 likes.
+
+//Template Strings or Literal way
+let result6 = `The blog called ${title} by ${author} has ${likes} likes.`
+console.log(result6);//Output: The blog called Best Reads of 2019 by Adonis has 30 likes.
+
+//Creating HTML template
+let html = `
+  <h2>${title}</h2>
+  <p>${author}</p>
+  <span>${likes} likes</span>
+`;
+console.log(html);
+// Output:
+  // <h2>Best Reads of 2019</h2>
+  // <p>Adonis</p>
+  // <span>30 likes</span>
+
+  
