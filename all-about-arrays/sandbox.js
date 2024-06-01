@@ -18,4 +18,18 @@ console.log(result);//Output: adonis,Tantan,sam,eden
 let result1 = ninjas.indexOf('sam');
 console.log(result1);//Output: 2
 
-// 3. 
+// 3. .concat()
+let result2 = ninjas.concat('Zenitsu', 'Bella');
+console.log(result2);//Output: ['adonis', 'Tantan', 'sam', 'eden', 'Zenitsu', 'Bella']
+
+//4. .push()
+let result3 = ninjas.push('Toothless');
+console.log(result3);//Output: 5
+console.log(ninjas);//Output: ['adonis', 'Tantan', 'sam', 'eden', 'Toothless']
+
+//5. .pop()
+result3 = ninjas.pop();
+console.log(result3);//Output: Toothless
+console.log(ninjas);//Output:  ['adonis', 'Tantan', 'sam', 'eden']
+
+//6.
