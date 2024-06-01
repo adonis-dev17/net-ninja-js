@@ -22,7 +22,7 @@ console.log(age < 20);//Output: false
 console.log(age <= 25);//Output: true
 console.log(age >= 25);//Output: true
 
-//4. nother comparison in strings
+//4. Another comparison in strings
 let name = 'adonis';
 
 console.log(name == 'adonis');//Output: true
