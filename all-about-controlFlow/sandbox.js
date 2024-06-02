@@ -26,13 +26,13 @@
 //     <div>Cham</div>
 //     <div>Constantine</div> */}
 
-// 3. While Loop
+// 3. While Loop - an alternative to for loop
 
-let i = 0;
-while(i<5) {
-  console.log('in loop: ', i);
-  i++;
-}
+// let i = 0;
+// while(i<5) {
+//   console.log('in loop: ', i);
+//   i++;
+// }
 // Output: 
 // in loop:  0
 // in loop:  1
@@ -40,4 +40,22 @@ while(i<5) {
 // in loop:  3
 // in loop:  4
 // looped finished
+// let names = ['Adonis', 'Eden', 'Cham', 'Constantine'];
+// let i = 0;
+// while(i<names.length) {
+//   console.log(names[i]);
+//   i++;
+// }
+//Output:
+// Adonis
+// Eden
+// Cham
+// Constantine
 
+//4. Do While loop
+let i = 5;
+do {
+  console.log('val of i is: ', i);
+  i++;
+} while(i<5);
+//Output: val of i is:  5
