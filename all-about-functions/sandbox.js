@@ -25,10 +25,31 @@
 // greet('Constantine', 'morning');
 
 // 5. Default values
-function greet(name='Adonis', time='Evening') {
-  console.log(`Good ${time}, ${name}!`);
-}
-greet();
-greet('Constantine', 'morning');
+// function greet(name='Adonis', time='Evening') {
+//   console.log(`Good ${time}, ${name}!`);
+// }
+// greet();
+// greet('Constantine', 'morning');
+
+// 6. Return values
+
+// let calculateArea = function(radius) {
+//   return 3.14 * radius **2;
+// };
+
+// let area = calculateArea(5);
+// console.log(area);
+
+// 7. regular function vs. Arrow function
+
+// let calculateArea = function(radius) {
+//   return 3.14 * radius **2;
+// };
 
 
+
+// Arrow function
+let calculateArea = radius => 3.14 * radius **2;
+
+let area = calculateArea(5);
+console.log('area is: ', area);
