@@ -95,21 +95,21 @@
 // }
 
 //8. break and continue
-const scores = [20, 10, 50, 80, 0, 30, 0,100, 90, 60, 5, 0, 70, 0, 50, 90];
+// const scores = [20, 10, 50, 80, 0, 30, 0,100, 90, 60, 5, 0, 70, 0, 50, 90];
 
-for (let i=0; i<scores.length; i++) {
+// for (let i=0; i<scores.length; i++) {
   
-  if(scores[i] === 0) {
-    continue;//This will skips all 0 scores;
-  }
+//   if(scores[i] === 0) {
+//     continue;//This will skips all 0 scores;
+//   }
 
-  console.log('Your score is ', scores[i]);
+//   console.log('Your score is ', scores[i]);
 
-  if(scores[i] === 100) {
-    console.log('Congratulations your score is ', scores[i], '!');
-    break;
-  }
-} 
+//   if(scores[i] === 100) {
+//     console.log('Congratulations your score is ', scores[i], '!');
+//     break;
+//   }
+// } 
 //Output:
 // Your score is  20
 // Your score is  10
@@ -118,3 +118,26 @@ for (let i=0; i<scores.length; i++) {
 // Your score is  30
 // Your score is  100
 // Congratulations your score is  100 !
+
+// 9. Switch statements - better than els-if, cleaner code
+const grade = 'A';
+
+switch(grade) {
+  case 'A':
+    console.log('You got an A.');
+    break;
+  case 'B':
+    console.log('You got an B.');
+    break;
+  case 'C':
+    console.log('You got an C.');
+    break;
+  case 'D':
+    console.log('You got an D.');
+    break;
+  case 'E':
+    console.log('You got an E.');
+    break;
+  default:
+    console.log('Not a valid grade');
+}
