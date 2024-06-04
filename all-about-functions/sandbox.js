@@ -49,7 +49,20 @@
 
 
 // Arrow function
-let calculateArea = radius => 3.14 * radius **2;
+// let calculateArea = radius => 3.14 * radius **2;
 
-let area = calculateArea(5);
-console.log('area is: ', area);
+// let area = calculateArea(5);
+// console.log('area is: ', area);
+
+//8. Functions Vs Methods
+const name = 'shaun';
+// function - defined on its own; not define by an object.
+const greet = () => 'hello';
+let resultOne = greet();
+console.log(resultOne);
+
+// Methods - invoke using dot notation; defined by an object.
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
+
+
