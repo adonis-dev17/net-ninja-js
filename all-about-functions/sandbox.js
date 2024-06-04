@@ -67,18 +67,58 @@
 
 // 9. Callbacks & foreach
 
-const myFunc = (callbackFunc) => {
-    // do something
-    let value = 50;
-    callbackFunc(value);
-}
+// const myFunc = (callbackFunc) => {
+//     // do something
+//     let value = 50;
+//     callbackFunc(value);
+// }
 
-myFunc(function(value){
-    // do comething;
-    console.log(value);
-}); //OUtput: 50
-// is the same as an arrow function below.
-myFunc(value => {
-    // do comething;
-    console.log(value);
-});//OUtput: 50
+// myFunc(function(value){
+//     // do comething;
+//     console.log(value);
+// }); //OUtput: 50
+// // is the same as an arrow function below.
+// myFunc(value => {
+//     // do comething;
+//     console.log(value);
+// });//OUtput: 50
+// ------------------*------------------------
+// forEach - in an array
+// let people = ['Adonis', 'Eden', 'Zenitsu', 'Cham', 'Constantine'];
+
+// people.forEach(function(person){
+//     console.log(person);
+// });
+// Output:
+// Adonis  
+// Eden    
+// Zenitsu     
+// Cham    
+// Constantine
+
+// Convert above to Arrow function
+// people.forEach((person, index) => {
+//     console.log(index, person);
+// });
+// output:
+// 0 Adonis 
+// 1 Eden 
+// 2 Zenitsu 
+// 3 Cham 
+// 4 Constantine
+
+// Another example -------------x--------------
+
+//  let people = ['Adonis', 'Eden', 'Zenitsu', 'Cham', 'Constantine'];
+
+//  const logPerson = (person, index) => {
+//     console.log(`${index} - Hello ${person}`);
+//  }
+
+//  people.forEach(logPerson);
+//  Output
+// 0 - Hello Adonis 
+// 1 - Hello Eden 
+// 2 - Hello Zenitsu 
+// 3 - Hello Cham 
+// 4 - Hello Constantine
