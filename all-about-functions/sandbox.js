@@ -55,14 +55,30 @@
 // console.log('area is: ', area);
 
 //8. Functions Vs Methods
-const name = 'shaun';
-// function - defined on its own; not define by an object.
-const greet = () => 'hello';
-let resultOne = greet();
-console.log(resultOne);
+// const name = 'shaun';
+// // function - defined on its own; not define by an object.
+// const greet = () => 'hello';
+// let resultOne = greet();
+// console.log(resultOne);
 
-// Methods - invoke using dot notation; defined by an object.
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+// // Methods - invoke using dot notation; defined by an object.
+// let resultTwo = name.toUpperCase();
+// console.log(resultTwo);
 
+// 9. Callbacks & foreach
 
+const myFunc = (callbackFunc) => {
+    // do something
+    let value = 50;
+    callbackFunc(value);
+}
+
+myFunc(function(value){
+    // do comething;
+    console.log(value);
+}); //OUtput: 50
+// is the same as an arrow function below.
+myFunc(value => {
+    // do comething;
+    console.log(value);
+});//OUtput: 50
