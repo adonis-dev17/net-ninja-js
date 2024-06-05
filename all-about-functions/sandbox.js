@@ -122,3 +122,27 @@
 // 2 - Hello Zenitsu 
 // 3 - Hello Cham 
 // 4 - Hello Constantine
+
+// 10. Created an html template using for each
+let ul = document.querySelector('.people');
+
+let team = ['Adonis', 'Eden', 'Cham', 'Pogi', 'Bella', 'Zenitsu', 'Toothless', 'Salem'];
+
+let html = '';
+
+team.forEach(function(member) {
+    html += `<li style="color: purple">${member}</li>`;
+});
+
+console.log(html);
+
+ul.innerHTML = html;
+
+
+
+
+
+
+
+
+
