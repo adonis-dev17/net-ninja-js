@@ -130,9 +130,7 @@ let team = ['Adonis', 'Eden', 'Cham', 'Pogi', 'Bella', 'Zenitsu', 'Toothless', '
 
 let html = '';
 
-team.forEach(function(member) {
-    html += `<li style="color: purple">${member}</li>`;
-});
+team.forEach(member => html += `<li style="color: purple">${member}</li>`);
 
 console.log(html);
 
