@@ -124,21 +124,30 @@
 // 4 - Hello Constantine
 
 // 10. Created an html template using for each
-let ul = document.querySelector('.people');
+// let ul = document.querySelector('.people');
 
-let team = ['Adonis', 'Eden', 'Cham', 'Pogi', 'Bella', 'Zenitsu', 'Toothless', 'Salem'];
+// let team = ['Adonis', 'Eden', 'Cham', 'Pogi', 'Bella', 'Zenitsu', 'Toothless', 'Salem'];
 
+// let html = '';
+
+// team.forEach(member => html += `<li style="color: purple">${member}</li>`);
+
+// console.log(html);
+
+// ul.innerHTML = html;
+
+
+// -------------x---------------
+
+let ul = document.querySelector('.people')
+let xAnimals = ['T-rex', 'Dodo', 'Sabertooth'];
 let html = '';
 
-team.forEach(member => html += `<li style="color: purple">${member}</li>`);
+let x = (xx, index) => html += `<li style="color:purple">${index+1} --> ${xx}</li>`;
 
-console.log(html);
+xAnimals.forEach(x);
 
 ul.innerHTML = html;
-
-
-
-
 
 
 
