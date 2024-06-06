@@ -1,0 +1,1 @@
+let para = document.querySelectore('body > h1:nth-child(2)');
