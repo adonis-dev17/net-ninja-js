@@ -75,29 +75,97 @@
   // ];
   // console.log(blogs); 
 
-  let user = {
-  name: 'Crystal',
-  age: 30,
-  email: 'crystal@thenetninja.co.uk',
-  location: 'Berlin',
-// objects inside an object
-  blogs: [
-    {title: 'Why mac & cheese rules', likes: 30},
-    {title: '10 Things to make with marmite', likes: 50}
-  ],
+//   let user = {
+//   name: 'Crystal',
+//   age: 30,
+//   email: 'crystal@thenetninja.co.uk',
+//   location: 'Berlin',
+// // objects inside an object
+//   blogs: [
+//     {title: 'Why mac & cheese rules', likes: 30},
+//     {title: '10 Things to make with marmite', likes: 50}
+//   ],
 
-  login() {
-    console.log('The user logged in.');
-  },
+//   login() {
+//     console.log('The user logged in.');
+//   },
 
-  logout() {
-    console.log('The user logged out.');
-  },
+//   logout() {
+//     console.log('The user logged out.');
+//   },
  
-  logBlogs() {
-    console.log('This user has written the following blogs:');
-    this.blogs.forEach(blogs => console.log(blogs));
-  }
-};
+//   logBlogs() {
+//     console.log('This user has written the following blogs:');
+//     this.blogs.forEach(blogs => console.log(blogs));
+//   }
+// };
 
-user.logBlogs();
+// user.logBlogs();
+
+// --------------------x----------------------
+
+// 9. Math Object
+
+// console.log(Math);
+// //10.  Math constants
+// console.log(Math.PI);//Output: 3.141592653589793
+// console.log(Math.E);//Output: 2.718281828459045
+
+// // 11. Math methods
+// let area = 7.7;
+// console.log(Math.round(area));//output: 8
+
+// let area1 = 7.2;
+// console.log(Math.round(area1));//output: 7
+
+// console.log(Math.floor(area));//output: 7
+// console.log(Math.floor(5.7));//output: 5
+
+// console.log(Math.ceil(area));//output: 8
+// console.log(Math.ceil(4.1));//output: 5
+
+// console.log(Math.trunc(area));//output: 7
+// console.log(Math.trunc(4.1));//output: 4
+
+// // 12. random numbers
+ 
+// const random = Math.random();
+
+// console.log(random);
+// console.log(Math.round(random));//output: either 0 or 1;
+// console.log(Math.round(random * 100));//output: random from 1 to 100;
+
+// ------------------------x-----------------------------
+// 13. Reference Values vs. Primitive Values
+
+// Primitive
+
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+// output: scoreOne: 50 scoreTwo: 50
+scoreOne = 90;
+console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+// output: scoreOne: 90 scoreTwo: 50
+
+
+// Reference
+const userOne = { name: 'ryu', age: 30};
+const userTwo = userOne;
+
+console.log(`userOne: ${userOne}`, `userTwo: ${userTwo}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
