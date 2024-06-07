@@ -1,29 +1,65 @@
 //1. object literals
 
+// let user = {
+//   name: 'Crystal',
+//   age: 30,
+//   email: 'crystal@thenetninja.co.uk',
+//   location: 'Berlin',
+//   blogs: ['Why mac & cheese rules', '10 Things to make with marmite']
+// };
+
+// console.log(user);
+
+// // 2. Dot notation
+// console.log(user.name);
+// // user.age = 35;
+// console.log(user.age);
+
+// // 3. Bracket Notation - useful in passing a variable
+
+// let key = 'location';//passing to a variaqble
+// console.log(user[key]);
+
+
+// user['name'] = 'Chun-li';
+// console.log(user['email']);
+// console.log(user['name']);
+
+// //4. typeof
+// console.log(typeof user);//output: object
+
+// 5. Methods
 let user = {
   name: 'Crystal',
   age: 30,
   email: 'crystal@thenetninja.co.uk',
   location: 'Berlin',
-  blogs: ['Why mac & cheese rules', '10 Things to make with marmite']
+  blogs: ['Why mac & cheese rules', '10 Things to make with marmite'],
+  // login: function() {
+  //   console.log('The user logged in.');
+  // },
+
+  // logout: function() {
+  //   console.log('The user logged out.');
+  // },
+// 6. Shorthand version - removing the colon and function
+// Note: we cannot use an arrow function here else this will not work
+  login() {
+    console.log('The user logged in.');
+  },
+
+  logout() {
+    console.log('The user logged out.');
+  },
+ 
+//7. this keyword - context object 
+  logBlogs() {
+    // console.log(this.blogs);
+    console.log('This user has written the following blogs:');
+    this.blogs.forEach(blogs => console.log(blogs));
+  }
 };
 
-console.log(user);
-
-// 2. Dot notation
-console.log(user.name);
-// user.age = 35;
-console.log(user.age);
-
-// 3. Bracket Notation - useful in passing a variable
-
-let key = 'location';//passing to a variaqble
-console.log(user[key]);
-
-
-user['name'] = 'Chun-li';
-console.log(user['email']);
-console.log(user['name']);
-
-//4. typeof
-console.log(typeof user);//output: object
+user.login();
+user.logout();
+user.logBlogs()
