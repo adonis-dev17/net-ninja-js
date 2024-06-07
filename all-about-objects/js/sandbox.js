@@ -28,22 +28,64 @@
 // //4. typeof
 // console.log(typeof user);//output: object
 
-// 5. Methods
-let user = {
+// ----------------------x------------------------------------
+
+// 5. Methods - regular functions and shrothand version
+// let user = {
+//   name: 'Crystal',
+//   age: 30,
+//   email: 'crystal@thenetninja.co.uk',
+//   location: 'Berlin',
+//   blogs: ['Why mac & cheese rules', '10 Things to make with marmite'],
+//   // login: function() {
+//   //   console.log('The user logged in.');
+//   // },
+
+//   // logout: function() {
+//   //   console.log('The user logged out.');
+//   // },
+// // 6. Shorthand version - removing the colon and function
+// // Note: we cannot use an arrow function here else this will not work
+//   login() {
+//     console.log('The user logged in.');
+//   },
+
+//   logout() {
+//     console.log('The user logged out.');
+//   },
+ 
+// //7. this keyword - context object 
+//   logBlogs() {
+//     // console.log(this.blogs);
+//     console.log('This user has written the following blogs:');
+//     this.blogs.forEach(blogs => console.log(blogs));
+//   }
+// };
+
+// user.login();
+// user.logout();
+// user.logBlogs()
+
+// -------------------------x----------------------------
+// 8. Add array of objects inside an object
+
+  // let blogs = [
+  //   {title: 'Why mac & cheese rules', likes: 30},
+  //   {title: '10 Things to make with marmite', likes: 50}
+  // ];
+  // console.log(blogs); 
+
+  let user = {
   name: 'Crystal',
   age: 30,
   email: 'crystal@thenetninja.co.uk',
   location: 'Berlin',
-  blogs: ['Why mac & cheese rules', '10 Things to make with marmite'],
-  // login: function() {
-  //   console.log('The user logged in.');
-  // },
+// objects inside an object
+  blogs: [
+    {title: 'Why mac & cheese rules', likes: 30},
+    {title: '10 Things to make with marmite', likes: 50}
+  ],
 
-  // logout: function() {
-  //   console.log('The user logged out.');
-  // },
-// 6. Shorthand version - removing the colon and function
-// Note: we cannot use an arrow function here else this will not work
   login() {
     console.log('The user logged in.');
   },
@@ -52,14 +94,10 @@ let user = {
     console.log('The user logged out.');
   },
  
-//7. this keyword - context object 
   logBlogs() {
-    // console.log(this.blogs);
     console.log('This user has written the following blogs:');
     this.blogs.forEach(blogs => console.log(blogs));
   }
 };
 
-user.login();
-user.logout();
-user.logBlogs()
+user.logBlogs();
