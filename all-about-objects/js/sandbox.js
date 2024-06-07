@@ -137,6 +137,7 @@
 
 // ------------------------x-----------------------------
 // 13. Reference Values vs. Primitive Values
+// Very Important!
 
 // Primitive
 
@@ -154,8 +155,11 @@ console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
 const userOne = { name: 'ryu', age: 30};
 const userTwo = userOne;
 
-console.log(`userOne: ${userOne}`, `userTwo: ${userTwo}`);
-
+console.log(userOne, userTwo);
+// output: {name: 'ryu', age: 30} {name: 'ryu', age: 30}
+userOne.age = 40;
+console.log(userOne, userTwo);
+// output: {name: 'ryu', age: 40} {name: 'ryu', age: 40}
 
 
 
