@@ -12,5 +12,13 @@
 // console.log(paras[2]);
 
 // 4. using element to load all under the same class
-const errors = document.querySelectorAll('.error');
-console.log(errors);
+// const errors = document.querySelectorAll('.error');
+// console.log(errors);
+
+//5. get element by ID
+const title = document.getElementById('page-title');
+console.log(title);
+
+//6. get element by class name
+const error = document.getElementsByClassName('error');
+console.log(error);
