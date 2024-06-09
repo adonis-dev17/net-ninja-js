@@ -16,9 +16,18 @@
 // console.log(errors);
 
 //5. get element by ID
-const title = document.getElementById('page-title');
-console.log(title);
+// const title = document.getElementById('page-title');
+// console.log(title);
 
 //6. get element by class name
-const error = document.getElementsByClassName('error');
-console.log(error);
+// const error = document.getElementsByClassName('error');
+// console.log(error);
+// console.log(error[0]);
+
+// 7. get elements by tag name
+const paras = document.getElementsByTagName('p');
+console.log(paras);
+console.log(paras[1]);
+
+
+
