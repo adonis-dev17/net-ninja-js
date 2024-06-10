@@ -25,9 +25,35 @@
 // console.log(error[0]);
 
 // 7. get elements by tag name
-const paras = document.getElementsByTagName('p');
-console.log(paras);
-console.log(paras[1]);
+// const paras = document.getElementsByTagName('p');
+// console.log(paras);
+// console.log(paras[1]);
+
+// 8. if we want to change something with the text
+
+// const para = document.querySelector('p');
+
+// console.log(para.innerText);
+
+// para.innerText = 'Ninjas are Awesome!'; // single text
+
+// 9. If we want to select several text and change them
+const paras = document.querySelectorAll('p');
+// paras.forEach(para => {
+//   console.log(para.innerText);
+//   para.innerText += ' new text';
+//   // console.log(para.innerText);
+// });
+
+// 10. If we want to change the html inside it.
+const content = document.querySelector('.content');
+// console.log(content.innerHTML);
+// content.innerHTML = '<h2>This is the new H2</h2>';//can replae p to h2 content
+content.innerHTML += '<h2>This is the new H2</h2>';//can append h2 to p content using +=.
+
+
+
+
 
 
 
