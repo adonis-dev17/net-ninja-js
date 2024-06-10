@@ -49,9 +49,14 @@ const paras = document.querySelectorAll('p');
 const content = document.querySelector('.content');
 // console.log(content.innerHTML);
 // content.innerHTML = '<h2>This is the new H2</h2>';//can replae p to h2 content
-content.innerHTML += '<h2>This is the new H2</h2>';//can append h2 to p content using +=.
+// content.innerHTML += '<h2>This is the new H2</h2>';//can append h2 to p content using +=.
 
+// 11. Uses of innerHTML - if you want to output an html template to an array of people
+const people = ['adonis', 'eden', 'cham', 'pogi'];
 
+people.forEach(person => {
+  content.innerHTML += `<p>${person}</p>`;
+});
 
 
 
