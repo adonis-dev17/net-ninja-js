@@ -14,10 +14,19 @@ sentence.forEach(pTag => {
   // console.log(pTag.textContent);
   if(pTag.textContent.includes('error')) { //use textContent instaed of innerText
     pTag.classList.add('error');
-  }else if (pTag.textContent.includes('success')) {
+  }
+  if (pTag.innerText.includes('success')) {//you can use innerText
     pTag.classList.add('success');
   }
 });
+
+// 3. To toggle classes
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');//it adds title in the class
+title.classList.toggle('test');//here it removes the class
+
+
 
 
 
