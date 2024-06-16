@@ -1,0 +1,6 @@
+body > section.banner > div > h2 > font > font{
+    color: red;
+}
+body > section.banner > div > h2 > span > font > font{
+    color: blue;
+}
