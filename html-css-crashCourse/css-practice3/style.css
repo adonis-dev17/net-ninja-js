@@ -21,29 +21,67 @@ p.success.feedback{
 
 /* 3. difference between div .error and div.error */
 
-div .error{/*this means this is a descendant selector and look for a pair of div then gets any element with class of error*/
-  color: red;
-}
+  /*this means this is a descendant selector and look for a pair of div then gets any element with class of error*/
 
-div.error{ /*this means div with class of error*/
+/* div .error{
   color: red;
-}
+} */
+
+/*this means div with class of error*/
+/* div.error{ 
+  color: red;
+} */
 
 /* 4. Targeting Attributes */
-a[href*="thenetninja"]{/* * means it includes */
+
+/* * means it includes */
+/* a[href*="thenetninja"]{
   background-color: #3dd13d;
   color: white;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-}
-a[href$=".com"]{ /*$ means at the end*/
+} */
+
+ /*$ means at the end*/
+/* a[href$=".com"]{ 
   background: red;
   color: white;
   border: 2px solid blue;
   text-decoration: none;
   font-weight: bold;
+} */
+
+/* 5. Inheritance */
+/* div{
+  color: lightcoral;
+  border:1px solid grey;
+  margin: 40px;
+  font-weight: bold;
 }
+p{
+  color: crimson;
+  border: inherit;
+  margin: inherit;
+}
+p{
+  color: orange;
+} */
 
+/* 6. Specificity */
 
-
+div{
+  color: lightcoral;
+  border:1px solid grey;
+  margin: 40px;
+  font-weight: bold;
+}
+/* specificity */
+div p{
+  color: crimson;
+  border: inherit;
+  margin: inherit;
+}
+p{
+  color: orange;
+}
