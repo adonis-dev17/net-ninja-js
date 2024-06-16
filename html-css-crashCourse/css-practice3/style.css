@@ -20,6 +20,7 @@ p.success.feedback{
 } */
 
 /* 3. difference between div .error and div.error */
+
 div .error{/*this means this is a descendant selector and look for a pair of div then gets any element with class of error*/
   color: red;
 }
@@ -28,6 +29,21 @@ div.error{ /*this means div with class of error*/
   color: red;
 }
 
+/* 4. Targeting Attributes */
+a[href*="thenetninja"]{/* * means it includes */
+  background-color: #3dd13d;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a[href$=".com"]{ /*$ means at the end*/
+  background: red;
+  color: white;
+  border: 2px solid blue;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 
 
