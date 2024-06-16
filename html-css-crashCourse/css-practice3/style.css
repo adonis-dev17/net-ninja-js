@@ -1,5 +1,5 @@
-/*  */
-p.error{
+/* 1. Using selectors to target html */
+/* p.error{
   color: red;
 }
 p.success{
@@ -8,3 +8,26 @@ p.success{
 p.success.feedback{
   border: 1px dashed rgb(2, 49, 2);
 }
+#content{
+  background: #ebebeb;
+  padding: 20px;
+} */
+
+/* 2. Using Descendants to target elements */
+
+/* div p{
+  color: purple;
+} */
+
+/* 3. difference between div .error and div.error */
+div .error{/*this means this is a descendant selector and look for a pair of div then gets any element with class of error*/
+  color: red;
+}
+
+div.error{ /*this means div with class of error*/
+  color: red;
+}
+
+
+
+
