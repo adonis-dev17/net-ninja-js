@@ -1,3 +1,8 @@
+body, ul, li, h1, h2, a{
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
 header{
   background-color: #F63232;
   padding: 20px;
@@ -39,7 +44,7 @@ nav{
   background-color: #f4f4f4;
   padding: 20px;
   position: sticky;
-  top: 148px;
+  top: 102px;
 }
 nav ul{
   white-space: nowrap;
@@ -58,3 +63,18 @@ nav ul{
   nav li a.join{
     color: #f63232;
   }
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+article h2{
+  color: #f63232;
+  font-size: 48px;
+}
+article p{
+  line-height: 2em;
+  color: #4b4b4b;
+}
