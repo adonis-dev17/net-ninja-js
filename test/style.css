@@ -1,5 +1,7 @@
 *{
-font-family: ExocetOTCECY-Medium;
+  padding: 0;
+  margin: 0;
+  font-family: ExocetOTCECY-Medium;
 }
 header{
   background-color: black;
@@ -16,7 +18,7 @@ header h1{
   border: 1px solid red;
   padding: 10px 12px;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 30px;
   
 }
 .banner{
@@ -43,7 +45,7 @@ nav{
   background-color: rgb(229, 223, 223);
   padding: 20px;
   position: sticky;
-  top: 110px;
+  top: 64px;
 }
 nav ul{
   white-space: nowrap;
@@ -57,8 +59,22 @@ nav li{
 }
 nav li a{
   text-decoration: none;
-  color: #4b4b4b
+  color: #4b4b4b;
 }
 nav li a.join{
   color: red;
+}
+main{
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+article h2{
+  color: #4b4b4b;
+  font-size: 48px;
+}
+article p{
+  line-height: 2em;;
 }
