@@ -96,3 +96,25 @@ article p{
 .images li img{
   max-width: 100%;
 }
+section.join{
+  background: #f4f4f4;
+  color: #6e6c6c;
+  text-align: center;
+  padding: 60px 20px;
+}
+.join h2{
+  font-size: 36px;
+}
+form input{
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
+footer{
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
