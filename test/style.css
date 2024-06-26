@@ -101,9 +101,11 @@ section.join{
   color: #6e6c6c;
   text-align: center;
   padding: 60px 20px;
+  line-height: 2em;
 }
 .join h2{
   font-size: 36px;
+  margin-bottom: 15px;
 }
 form input{
   margin: 20px 0;
@@ -111,10 +113,26 @@ form input{
   font-size: 24px;
   border-radius: 28px;
   border: 4px solid white;
+  text-align: center;
 }
 footer{
   background: black;
   color: white;
   padding: 10px;
   text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.social-icons a:hover {
+  color: #ddd;
 }
