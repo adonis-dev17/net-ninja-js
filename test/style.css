@@ -4,7 +4,7 @@ font-family: ExocetOTCECY-Medium;
 header{
   background-color: black;
   color: red;
-  padding: 20px;
+  padding: 5px;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -12,7 +12,13 @@ header{
   left: 0;
   z-index: 1;
 }
-
+header h1{
+  border: 1px solid red;
+  padding: 10px 12px;
+  display: inline-block;
+  border-radius: 8px;
+  
+}
 .banner{
   position: relative;
 }
@@ -33,4 +39,26 @@ header{
 .banner h2 span{
   font-size: 1.5em;
 }
-
+nav{
+  background-color: rgb(229, 223, 223);
+  padding: 20px;
+  position: sticky;
+  top: 110px;
+}
+nav ul{
+  white-space: nowrap;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+nav li{
+  width: 25%;
+  display: inline-block;
+  font-size: 20px;
+}
+nav li a{
+  text-decoration: none;
+  color: #4b4b4b
+}
+nav li a.join{
+  color: red;
+}
