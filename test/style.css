@@ -117,7 +117,7 @@ form input{
 }
 footer{
   background: black;
-  color: white;
+  color: gold;
   padding: 10px;
   text-align: center;
 }
@@ -134,5 +134,5 @@ footer{
 }
 
 .social-icons a:hover {
-  color: #ddd;
+  color: red;
 }
