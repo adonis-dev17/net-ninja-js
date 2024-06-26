@@ -1,6 +1,18 @@
 *{
 font-family: ExocetOTCECY-Medium;
 }
+header{
+  background-color: black;
+  color: red;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .banner{
   position: relative;
 }
@@ -13,7 +25,7 @@ font-family: ExocetOTCECY-Medium;
   padding: 10px;
   position: absolute;
   left: 0;
-  top: 10%;
+  top: 20%;
 }
 .banner h2{
   font-size: 50px;
