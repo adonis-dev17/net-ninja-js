@@ -136,3 +136,10 @@ footer{
 .social-icons a:hover {
   color: red;
 }
+
+/* pseudo classes */
+nav li a:hover{
+  text-decoration: underline;
+  background-color: rgb(231, 172, 192);
+  padding 2px;
+}
