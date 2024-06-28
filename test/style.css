@@ -140,14 +140,29 @@ footer{
 /* pseudo classes */
 nav li a:hover{
   text-decoration: underline;
-  background-color: rgb(235, 18, 18);
+  background-color: rgb(40, 39, 39);
   padding: 10px;
-  border: 3px solid rgb(231, 10, 10);
+  border: 3px solid white;
   border-radius: 30px;
-  color: white;
+  color: red;
+  opacity: 0.8;
 }
 
 .images li:hover{
 position: relative;
 top: -8px;
 }
+form input:hover{
+ border: 4px dashed rgb(40, 39, 39);
+ outline: none;
+}
+form input:valid{
+  border: 8px solid gold;
+  outline: none;
+}
+
+
+
+
+
+
