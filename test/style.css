@@ -140,6 +140,14 @@ footer{
 /* pseudo classes */
 nav li a:hover{
   text-decoration: underline;
-  background-color: rgb(231, 172, 192);
-  padding 2px;
+  background-color: rgb(235, 18, 18);
+  padding: 10px;
+  border: 3px solid rgb(231, 10, 10);
+  border-radius: 30px;
+  color: white;
+}
+
+.images li:hover{
+position: relative;
+top: -8px;
 }
