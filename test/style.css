@@ -150,7 +150,7 @@ nav li a:hover{
 
 .images li:hover{
 position: relative;
-top: -8px;
+top: -4px;
 }
 form input:hover{
  border: 4px dashed rgb(40, 39, 39);
@@ -160,7 +160,15 @@ form input:valid{
   border: 8px solid gold;
   outline: none;
 }
-
+article p::first-letter{
+  font-weight: bold;
+  font-size: 3em;
+  color: red;
+}
+p::selection{
+  background: red;
+  color: white;
+}
 
 
 
