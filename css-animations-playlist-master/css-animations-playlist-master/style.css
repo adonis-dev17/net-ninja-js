@@ -17,16 +17,15 @@ body {
   font-family: cursive;
   color: white;
   font-size: 14px;
-  transition: 1s;
   cursor: pointer;
+  transition: 1s;
 }
 .start-button:hover {
   background-color: dodgerblue;
-  transform: rotateZ(360deg);
   border-radius: 20px;
-
-
+  transform: rotate(360deg);
 }
+
 /*
 .plane {
   width: 80px;
