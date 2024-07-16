@@ -1,0 +1,37 @@
+body {
+  background-color: skyblue;
+  text-align: center;
+  height: 3000px;
+  position: relative;
+}
+/*
+.wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+img {
+  transform: rotateZ(90deg) scale(0.5) translateY(100px);
+}
+.rotate {
+  border: none;
+  width: 200px;
+  padding: 33px 10px;
+  background-color: gold;
+  box-shadow: 10px 12px 10px rgba(61, 120, 16, 0.8);
+  transform: rotateZ(60deg);
+  z-index: 100;
+  position: absolute;
+  left: 30px;
+}
+.skew {
+  border: none;
+  width: 200px;
+  padding: 33px 10px;
+  background-color: gold;
+  box-shadow: 10px 10px 22px rgba(15, 24, 227, 0.8);
+  transform: skew(26deg, 10deg);
+  position: absolute;
+  right: 30px;
+}
+*/
