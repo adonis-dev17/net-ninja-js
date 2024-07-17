@@ -1,27 +1,30 @@
 /*// BASE STYLES //*/
 
-html, body{
+html,
+body {
   height: 100%;
-  width:100%;
+  width: 100%;
   overflow: hidden;
   margin: 0;
 }
 
-.grass, .sky, .road{
+.grass,
+.sky,
+.road {
   position: relative;
 }
 
-.sky{
+.sky {
   height: 40%;
   background: skyblue;
 }
 
-.grass{
+.grass {
   height: 30%;
   background: seagreen;
 }
 
-.road{
+.road {
   height: 30%;
   background: dimgrey;
   box-sizing: border-box;
@@ -30,7 +33,7 @@ html, body{
   width: 100%;
 }
 
-.lines{
+.lines {
   box-sizing: border-box;
   border: 5px dashed #fff;
   height: 0px;
@@ -40,14 +43,21 @@ html, body{
 }
 
 /*// ELEMENTS TO ANIMATE //*/
-
-
+.mario {
+  position: absolute;
+  top: -55px;
+  width: 20px;
+  animation-name: drive;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
 
 /*// KEYFRAMES //*/
-
-
-
-
-
-
-
+@keyframes drive {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
