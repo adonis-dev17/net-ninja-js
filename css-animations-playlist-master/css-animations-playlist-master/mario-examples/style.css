@@ -48,7 +48,7 @@ body {
   top: 25px;
   left: 0;
   animation-name: drive;
-  animation-timing-function: cubic-bezier(0.06, 0.75, 0.57, 0.68);
+  animation-timing-function: linear;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -62,8 +62,69 @@ body {
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: cubic-bezier(0.99, 0, 0.61, 0.81);
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+.cloud {
+  position: absolute;
+}
+.cloud:nth-child(1) {
+  top: 40px;
+  opacity: 0.6;
+  animation: wind 80s linear infinite reverse;
+}
+
+.cloud:nth-child(2) {
+  top: 40px;
+  animation: wind 50s linear infinite reverse;
+}
+
+.tree {
+  position: absolute;
+  width: 99px;
+  
+}
+.tree:nth-child(1) {
+  top: 20px;
+  left: 200px;
+  width: 50px;
+  animation: trees 66s linear infinite reverse;
+}
+.tree:nth-child(2) {
+  top: 80px;
+  right: 200px;
+  animation: trees 10s linear infinite reverse;
+}
+.tree:nth-child(3) {
+  top: -20px;
+  left: 20px;
+  width: 30px;
+  animation: trees 80s linear infinite reverse;
+}
+.tree:nth-child(4) {
+  top: -13px;
+  left: 77px;
+  width: 41px;
+  animation: trees 70s linear infinite reverse;
+}
+.tree:nth-child(5) {
+  top: 84px;
+  left: 20px;
+  width: 132px;
+  animation: trees 8s linear infinite reverse;
+}
+.tree:nth-child(6) {
+  top: -16px;
+  left: 174px;
+  width: 27px;
+  animation: trees 78s linear infinite reverse;
+}
+.tree:nth-child(7) {
+  top: 39px;
+  left: 20px;
+  width: 60px;
+  animation: trees 50s linear infinite reverse;
 }
 
 /*// KEYFRAMES //*/
@@ -73,5 +134,21 @@ body {
   }
   to {
     transform: translateX(2000px);
+  }
+}
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes trees {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
   }
 }
