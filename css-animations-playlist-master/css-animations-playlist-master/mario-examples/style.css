@@ -70,20 +70,40 @@ body {
   position: absolute;
 }
 .cloud:nth-child(1) {
-  top: 40px;
+  width: 300px;
+  height: 100px;
+  bottom: 20px;
   opacity: 0.6;
-  animation: wind 80s linear infinite reverse;
+  animation: wind 70s linear infinite reverse;
 }
 
 .cloud:nth-child(2) {
-  top: 40px;
-  animation: wind 50s linear infinite reverse;
+  top: 20px;
+  animation: wind 30s linear infinite reverse;
 }
-
+.cloud:nth-child(3) {
+  width: 200px;
+  height: 90px;
+  bottom: 10px;
+  opacity: 0.5;
+  animation: wind 90s linear infinite reverse;
+}
+.cloud:nth-child(4) {
+  width: 100px;
+  height: 90px;
+  bottom: 20px;
+  animation: wind 40s linear infinite reverse;
+}
+.cloud:nth-child(5) {
+  width: 200px;
+  height: 150px;
+  bottom: 20px;
+  opacity: 0.7;
+  animation: wind 60s linear infinite reverse;
+}
 .tree {
   position: absolute;
   width: 99px;
-  
 }
 .tree:nth-child(1) {
   top: 20px;
@@ -100,12 +120,14 @@ body {
   top: -20px;
   left: 20px;
   width: 30px;
+  opacity: 0.5;
   animation: trees 80s linear infinite reverse;
 }
 .tree:nth-child(4) {
   top: -13px;
-  left: 77px;
+  left: 78px;
   width: 41px;
+  opacity: 0.7;
   animation: trees 70s linear infinite reverse;
 }
 .tree:nth-child(5) {
@@ -118,6 +140,7 @@ body {
   top: -16px;
   left: 174px;
   width: 27px;
+  opacity: 0.6;
   animation: trees 78s linear infinite reverse;
 }
 .tree:nth-child(7) {
@@ -126,6 +149,27 @@ body {
   width: 60px;
   animation: trees 50s linear infinite reverse;
 }
+
+/*
+.ufo {
+  position: absolute;
+}
+.ufo:nth-child(1) {
+  width: 800px;
+  height: 80px;
+  top: 10px;
+  left: 0;
+  animation: fly 50s linear infinite reverse;
+}
+
+.ufo:nth-child(2) {
+  width: 800px;
+  height: 80px;
+  bottom: 10px;
+  left: 0;
+  animation: fly 90s linear infinite reverse;
+}
+*/
 
 /*// KEYFRAMES //*/
 @keyframes drive {
@@ -138,7 +182,7 @@ body {
 }
 @keyframes wind {
   from {
-    left: -300px;
+    left: -500px;
   }
   to {
     left: 100%;
@@ -152,3 +196,13 @@ body {
     left: 100%;
   }
 }
+/*
+@keyframes fly {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
+  }
+  */
+
