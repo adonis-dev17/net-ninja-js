@@ -46,18 +46,20 @@ body {
 .mario {
   position: absolute;
   top: -55px;
-  width: 20px;
+  left: 0;
   animation-name: drive;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 3s;
 }
 
 /*// KEYFRAMES //*/
 @keyframes drive {
   from {
-    transform: translateX(0);
+    transform: translateX(200px);
   }
   to {
-    transform: translateX(2000px);
+    transform: translateX(1000px);
   }
 }
