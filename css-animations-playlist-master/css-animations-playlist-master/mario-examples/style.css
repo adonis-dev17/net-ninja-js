@@ -45,13 +45,24 @@ body {
 /*// ELEMENTS TO ANIMATE //*/
 .mario {
   position: absolute;
-  top: -55px;
+  top: 25px;
   left: 0;
   animation-name: drive;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
+}
+
+.luigi {
+  position: absolute;
+  left: 0;
+  top: -80px;
+  animation-name: drive;
+  animation-duration: 7s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
 }
 
 /*// KEYFRAMES //*/
