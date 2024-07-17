@@ -48,7 +48,7 @@ body {
   top: 25px;
   left: 0;
   animation-name: drive;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: cubic-bezier(0.06, 0.75, 0.57, 0.68);
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
@@ -59,10 +59,11 @@ body {
   left: 0;
   top: -80px;
   animation-name: drive;
-  animation-duration: 7s;
+  animation-duration: 5s;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
-  animation-direction:alternate-reverse;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(0.99, 0, 0.61, 0.81);
 }
 
 /*// KEYFRAMES //*/
