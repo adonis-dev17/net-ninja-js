@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth; 
+}
 *{
   padding: 0;
   margin: 0;
@@ -144,7 +147,7 @@ nav li a:hover{
   padding: 10px;
   border: 3px solid white;
   border-radius: 30px;
-  color: red;
+  color: gold;
   opacity: 0.8;
 }
 
@@ -170,6 +173,10 @@ p::selection{
   color: white;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 1400px){
+  
+}
 
 
 

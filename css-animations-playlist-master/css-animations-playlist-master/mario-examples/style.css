@@ -48,7 +48,7 @@ body {
   top: 25px;
   left: 0;
   animation:
-    drive 3s both infinite linear,
+    drive 18s both infinite linear,
     jump 8s 8s infinite ease;
   /*
   animation-name: drive;
@@ -63,8 +63,9 @@ body {
   position: absolute;
   left: 0;
   top: -80px;
-  animation: drive 5s both infinite normal linear,
-    jump 8s 8s infinite ease;;
+  animation:
+    drive 20s both infinite normal linear,
+    jump 8s 8s infinite ease;
   /*
   animation-name: drive;
   animation-duration: 5s;
@@ -79,16 +80,15 @@ body {
   position: absolute;
 }
 .cloud:nth-child(1) {
-  width: 300px;
-  height: 100px;
   bottom: 20px;
-  opacity: 0.6;
-  animation: wind 70s linear infinite reverse;
+  animation: wind 25s linear infinite reverse;
 }
-
 .cloud:nth-child(2) {
-  top: 20px;
-  animation: wind 30s linear infinite reverse;
+  top: 15px;
+  opacity: 0.8;
+  height: 200px;
+  width: 500px;
+  animation: wind 40s linear infinite reverse;
 }
 .cloud:nth-child(3) {
   width: 200px;
@@ -100,8 +100,8 @@ body {
 .cloud:nth-child(4) {
   width: 100px;
   height: 90px;
-  bottom: 20px;
-  animation: wind 40s linear infinite reverse;
+  bottom: 50px;
+  animation: wind 35s linear infinite reverse;
 }
 .cloud:nth-child(5) {
   width: 200px;
@@ -159,27 +159,6 @@ body {
   animation: trees 50s linear infinite reverse;
 }
 
-/*
-.ufo {
-  position: absolute;
-}
-.ufo:nth-child(1) {
-  width: 800px;
-  height: 80px;
-  top: 10px;
-  left: 0;
-  animation: fly 50s linear infinite reverse;
-}
-
-.ufo:nth-child(2) {
-  width: 800px;
-  height: 80px;
-  bottom: 10px;
-  left: 0;
-  animation: fly 90s linear infinite reverse;
-}
-*/
-
 /*// KEYFRAMES //*/
 @keyframes drive {
   from {
@@ -205,6 +184,16 @@ body {
     left: 100%;
   }
 }
+
+@keyframes mountain {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
+
 @keyframes jump {
   0% {
     top: 10px;

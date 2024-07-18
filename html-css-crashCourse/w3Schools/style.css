@@ -1,0 +1,33 @@
+body{
+  background-color: #1f2e3c;
+  background-image: url('img/robloxLogo.png');
+  background-repeat: no-repeat;
+  background-position: 200px 200px;
+ 
+}
+
+h1{
+  background-color: dodgerblue;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  border: 2px solid mediumslateblue;
+}
+
+p{
+  color: #f23eff;
+  font-size: 20px;
+  font-family: Verdana; 
+  border: 3px solid violet;
+}
+
+ul {
+  border: 3px solid tomato;
+  background-color: tomato;
+  text-align: center;
+}
+
+ul li a{
+  color: white;
+  font-size: 20px;
+}
