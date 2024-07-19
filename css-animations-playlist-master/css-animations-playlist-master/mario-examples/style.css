@@ -48,7 +48,7 @@ body {
   top: 25px;
   left: 0;
   animation:
-    drive 18s both infinite linear,
+    drive 8s both infinite linear,
     jump 8s 8s infinite ease;
   /*
   animation-name: drive;
